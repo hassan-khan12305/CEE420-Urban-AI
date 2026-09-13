@@ -1,0 +1,29 @@
+# =============================================================================
+# File      : README.org -- Precept 02
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Precept 02 Kit, The Open City
+#+SUBTITLE: CEE420 Urban AI
+#+AUTHOR: Jürgen Hackl
+
+The town's own data, one number per block, and a map good enough for the municipal lobby. Precept 02 itself runs as a project studio on paper, so nothing in this folder is run together in class. Every notebook here is self-paced, finished, and shipped with its outputs, so you can read it before you run it. None of it is assessed, and more notebooks arrive with the next pull.
+
+Start with the first cells of =02_01=. They list the seven municipal layers and print a coordinate system whose unit is the US survey foot, and if that works your environment is ready for the next precept that runs code, which is P04 on 30 September. Then read in order. Every notebook starts from the lecture's rule that a map states its coordinate system, its units, its denominator and its date.
+
+| Notebook | What it covers |
+|----------+----------------|
+| =02_01_the_municipality_measures_in_feet= | Reading the municipality's own files, which arrive in feet on two datums, and what silently goes wrong when you forget |
+| =02_02_one_number_per_block= | Joining parcels into tax blocks, the join that doubles rows and the one that loses them, and the check that balances to the dollar |
+| =02_03_three_maps_one_dataset= | Three classification schemes on one grid, the lecture's numbers reproduced by hand, and the two ways a colour ramp can lie |
+| =02_04_a_map_for_the_lobby= | Taxable value per acre per block, every decision made in the open, exported as the file type the poster will be; the template for the second assignment |
+|----------+----------------|
+| =02_05_two_authorities_one_town= | The municipality's parcels against the State's, joined on a key you build after three joins fail silently, and an inspection record that maps who owns the road |
+| =02_06_morans_i_by_hand= | The lecture's headline statistic from four lines of numpy, tested by shuffling, and carried to tax blocks where the neighbours have to be decided first |
+
+The agent that drives QGIS on Wednesday's projector is handed the block layer that =02_04= exports. The recording or its stills and the exported poster go on Canvas after the session, and the numbers =02_04= prints are the audit. You do not need QGIS on your laptop; everything here runs in Python, in the same container as last week. If you would like it anyway, the long term release from qgis.org installs like any other application.
+
+The data in =data/= is the Municipality of Princeton's own published layers, the State's parcel composite with the tax roll, Census boundaries, and the grid the lecture's figures were drawn on, pinned so that nothing here depends on a live service and kept in the coordinate systems they were served in, on purpose. Sources and licences are listed in =data/README.org=. Nothing that identifies a person is in any file; owner names, owner mailing addresses and reporter details were never requested from the services, so they never reached disk. A parcel's own street location is kept, because it names a piece of land rather than a person.
+
+The maps you export in =02_04= go to a folder called =output/= beside the notebooks. Git ignores it, so nothing you make there can collide with next week's pull.

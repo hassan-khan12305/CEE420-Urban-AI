@@ -38,3 +38,35 @@ def mystery():
 def landmarks():
     df = pd.read_csv(P01_DATA / "landmarks.csv")
     return gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.lon, df.lat), crs="EPSG:4326")
+
+
+# Precept 02, the town's own data. Layers are read once per session.
+P02_DATA = REPO / "P02" / "data"
+
+
+@pytest.fixture(scope="session")
+def p02():
+    return json.loads((P02_DATA / "ground_truth.json").read_text())["p02"]
+
+
+@pytest.fixture(scope="session")
+def municipal():
+    """A dict of every layer in the municipal GeoPackage, in the CRS it was served in."""
+    path = P02_DATA / "princeton_municipal.gpkg"
+    return {name: gpd.read_file(path, layer=name) for name in gpd.list_layers(path)["name"]}
+
+
+@pytest.fixture(scope="session")
+def njgin_parcels():
+    return gpd.read_file(P02_DATA / "njgin_parcels.gpkg", layer="parcels")
+
+
+@pytest.fixture(scope="session")
+def grid():
+    return gpd.read_file(P02_DATA / "princeton_grid_250m.gpkg", layer="grid")
+
+
+@pytest.fixture(scope="session")
+def census():
+    path = P02_DATA / "census_princeton.gpkg"
+    return {name: gpd.read_file(path, layer=name) for name in gpd.list_layers(path)["name"]}
