@@ -1,0 +1,196 @@
+{
+  "generated": "2026-09-13",
+  "p02": {
+    "snapshots": {
+      "municipal": "2026-09-11",
+      "njgin": "2026-09-11",
+      "census": "2026-09-11",
+      "acs_vintage": 2024
+    },
+    "crs": {
+      "boundary": "EPSG:3424",
+      "zoning": "EPSG:6527",
+      "tax_blocks": "EPSG:3424",
+      "parcels": "EPSG:6527",
+      "roads": "EPSG:6527",
+      "deer_reports": "EPSG:6527",
+      "stormwater_inlets": "EPSG:6527",
+      "njgin_parcels": "EPSG:3857",
+      "census": "EPSG:4269"
+    },
+    "counts": {
+      "zoning": 126,
+      "zoning_categories": 4,
+      "tax_block_polygons": 484,
+      "tax_blocks": 455,
+      "parcels_municipal": 8874,
+      "parcels_njgin": 8391,
+      "roads": 1782,
+      "deer_reports": 492,
+      "stormwater_inlets": 4455,
+      "inlets_inspected": 3336,
+      "tracts": 7,
+      "block_groups": 21
+    },
+    "boundary": {
+      "area_km2_state": 47.66,
+      "area_km2_municipal": 47.69,
+      "zoning_area_million_ft2": 476.32,
+      "zoning_area_km2": 44.23
+    },
+    "parcels": {
+      "assessed_value_total_usd": 9501720100,
+      "exempt_parcels": 757,
+      "exempt_share_of_value": 0.266,
+      "exempt_share_of_land": 0.246,
+      "calc_acre_total": 13815
+    },
+    "join": {
+      "intersects_rows": 9428,
+      "intersects_sum_usd": 11338833100,
+      "centroid_rows": 8390,
+      "centroid_distinct": 8385,
+      "centroid_doubled": 5,
+      "centroid_sum_usd": 9489363600,
+      "unassigned": 6,
+      "unassigned_value_usd": 12356500,
+      "food_in_zoning_rows": 91,
+      "key_matched": 8338,
+      "key_match_share": 0.994
+    },
+    "blocks": {
+      "with_parcels": 450,
+      "corr_total_area": 0.26,
+      "top3_overlap": 0,
+      "per_acre_ratio_top_to_bottom_class": 24.1,
+      "with_taxable_parcels": 425,
+      "taxable_per_acre_ratio_top_to_bottom_class": 21.0,
+      "taxable_breaks_usd_per_acre": [
+        438371,
+        965372,
+        1789997,
+        3119883,
+        52862549
+      ],
+      "taxable_occupancy": [
+        85,
+        85,
+        85,
+        85,
+        85
+      ],
+      "taxable_top3": [
+        {
+          "block": "20.03",
+          "usd_per_acre": 52862549
+        },
+        {
+          "block": "20.01",
+          "usd_per_acre": 26060608
+        },
+        {
+          "block": "20.04",
+          "usd_per_acre": 23147833
+        }
+      ]
+    },
+    "moran_blocks": {
+      "blocks": 450,
+      "touches_pairs": 250,
+      "touches_isolated": 274,
+      "I_per_acre_touches": 0.18,
+      "I_total_touches": 0.8701,
+      "band_m": 30,
+      "band_pairs": 2678,
+      "band_isolated": 0,
+      "I_per_acre": 0.4819,
+      "I_total": 0.3748,
+      "z": 20.5,
+      "p": 0.001
+    },
+    "authorities": {
+      "municipal_rows": 8874,
+      "municipal_keys_unique": 8868,
+      "state_rows": 8391,
+      "propid_block_as_int_matches": 0,
+      "naive_key_matches": 932,
+      "address_matches": 8419,
+      "state_addresses_shared": 247,
+      "key_matched_state": 8338,
+      "key_matched_municipal": 8343,
+      "unmatched_municipal": 531,
+      "unmatched_municipal_with_qualifier": 356,
+      "unmatched_state": 53,
+      "unmatched_state_value_usd": 33357900,
+      "centroid_block_disagrees": 326
+    },
+    "inspections": {
+      "never_inspected": 1119,
+      "by_owner": {
+        "Municipality": 3288,
+        "Private": 769,
+        "State": 178,
+        "County": 131,
+        "Other Municipality": 89
+      },
+      "never_inspected_by_owner": {
+        "Private": 753,
+        "State": 178,
+        "County": 131,
+        "Municipality": 52,
+        "Other Municipality": 5
+      },
+      "disagreements_by_owner": {
+        "State": 18,
+        "Municipality": 13
+      }
+    },
+    "grid": {
+      "cells": 839,
+      "buildings": 7893,
+      "step_m": 250,
+      "occupancy": {
+        "EqualInterval": [
+          725,
+          79,
+          25,
+          8,
+          2
+        ],
+        "Quantiles": [
+          211,
+          157,
+          149,
+          168,
+          154
+        ],
+        "FisherJenks": [
+          418,
+          229,
+          117,
+          51,
+          24
+        ]
+      },
+      "leaders": {
+        "by_count_m2_per_building": 140,
+        "by_share_m2_per_building": 1066,
+        "top3_overlap": 0
+      }
+    },
+    "moran": {
+      "I": 0.7195,
+      "I_shuffled": 0.0011,
+      "expected": -0.0012,
+      "z": 40.1,
+      "p": 0.001,
+      "slope_row_standardised": 0.6964,
+      "seed": 20260914,
+      "n_perm": 999
+    },
+    "inlets": {
+      "coordinate_disagreements_over_1ft": 31,
+      "worst_disagreement_ft": 223
+    }
+  }
+}

@@ -25,6 +25,16 @@ The first four are what we run together in class. The rest are self-paced: each 
 | =01_08_reading_a_map_you_drew= | Improving a plot deliberately, and naming the artefacts that are not bugs |
 | =01_09_three_places_three_radii= | Asking the question twelve times, and finding that the threshold does the work |
 
+* The showcase
+
+=showcase_walking_distance.py= is not a notebook and not homework. It is a plain Python script, written by an AI coding agent during the preparation of this course, that answers the Duel question properly, routing along the real network of footways and streets instead of drawing a circle, and reporting how far wrong the circle was. We ran it together at the end of the first precept.
+
+Run it from a terminal inside the container with =python P01/showcase_walking_distance.py=, and it writes a map and a set of layers into =P01/showcase_output/=. Read it afterwards as a specimen of what a capable agent produces from one sentence of instruction. You are not expected to be able to write it in week one. You are expected, by the end of the semester, to be able to read it, doubt it, and check it.
+
+Note that it answers the same question as the Duel, so if you missed the precept, make your own attempt at the Duel first and run the script afterwards.
+
+* Never programmed before?
+
 If you have never programmed, work through the =F00= folder first, or alongside. Nothing in these notebooks assumes more than it covers.
 
 The data in =data/= is pinned so that nothing here depends on a live service. Its sources and licences are listed in =data/README.org=.

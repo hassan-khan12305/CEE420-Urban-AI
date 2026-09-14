@@ -139,14 +139,39 @@ def test_no_cell_is_excused_from_execution(notebook):
     assert not skipped, f"{notebook.name} excuses cells {skipped} from execution"
 
 
+def carries_osm_attribution(path: Path) -> bool:
+    """Whether a shipped file says, in its own metadata, that it derives from OpenStreetMap.
+
+    Deciding by inspection rather than by filename means a renamed or repackaged layer
+    cannot slip past. GeoJSON files carry an attribution member; GeoPackage layers carry
+    it in their layer metadata.
+    """
+    if not path.exists():
+        return False
+    if path.suffix == ".geojson":
+        try:
+            return "OpenStreetMap" in json.loads(path.read_text()).get("attribution", "")
+        except (ValueError, OSError):
+            return False
+    if path.suffix == ".gpkg":
+        import pyogrio
+
+        for name, _ in pyogrio.list_layers(path):
+            meta = pyogrio.read_info(path, layer=name).get("layer_metadata") or {}
+            if "OpenStreetMap" in meta.get("attribution", "") or "OpenStreetMap" in meta.get("licence", ""):
+                return True
+    return False
+
+
 @pytest.mark.parametrize("notebook", NOTEBOOKS, ids=IDS)
 def test_notebooks_using_osm_data_credit_openstreetmap(notebook):
     """ODbL requires attribution, and the shipped files carry it. So must the prose."""
     cells = json.loads(notebook.read_text())["cells"]
     code = "\n".join("".join(c["source"]) for c in cells if c["cell_type"] == "code")
     prose = "\n".join("".join(c["source"]) for c in cells if c["cell_type"] == "markdown")
-    if "_food.geojson" not in code and "_buildings.geojson" not in code:
-        pytest.skip("no OpenStreetMap layer in this notebook")
+    read = {notebook.parent / quoted for quoted in READ_PATH.findall(code)}
+    if not any(carries_osm_attribution(path) for path in read):
+        pytest.skip("no OpenStreetMap-derived layer is read by this notebook")
     assert "OpenStreetMap" in prose and "ODbL" in prose, (
         f"{notebook.name} uses OpenStreetMap data without crediting it in the text"
     )

@@ -1,7 +1,7 @@
 # =============================================================================
 # File      : README.org -- Student quickstart for the course code
 # Author    : Jürgen Hackl <hackl@princeton.edu>
-# Time-stamp: <2026-09-07>
+# Time-stamp: <2026-09-11>
 # Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
 # =============================================================================
 #+OPTIONS: toc:nil
@@ -16,19 +16,23 @@
 #+LATEX_COMPILER: lualatex
 #+LATEX_CLASS: princeton
 #+LATEX_CLASS_OPTIONS: [11pt]
-#+LATEX_HEADER: \version{v0.1}
+#+LATEX_HEADER: \version{v0.2}
 # =============================================================================
 
 #+latex: \maketitle
 
-Princeton University, Fall 2026. Everything we run together in the Wednesday precepts lives here. Each week adds a folder. You get the new material with one click in GitHub Desktop.
+Princeton University, Fall 2026. Everything we run in the Wednesday precepts lives here, together with the kits that go with a studio session. Each week adds a folder. You get the new material with one click in GitHub Desktop.
 
 | Folder | What is in it                                                    |
 |--------+------------------------------------------------------------------|
 | =F00/= | Python foundations, self-study, start here if you have never programmed |
 | =P01/= | Getting Started: Python, Maps & Your Coding Agent (Wed Sep 9)   |
+| =A01/= | Your Town, Your Agent, Your Map: the first assignment, due Fri Sep 25 |
+| =P02/= | The Open City kit: the town's own data, one number per block, a map for the lobby, self-paced from Mon Sep 14 |
 
-The precept notebooks are numbered and meant to be read in order. The first few in each folder are what we run together in class; the rest are self-contained continuations you work through at your own pace, and they explain properly whatever the class used quickly.
+Assignment folders such as =A01/= appear beside the precept folders on the day they are released.
+
+The precept notebooks are numbered and meant to be read in order. The first few in each folder are usually what we run together in class, and when a precept runs as a studio instead, as P02 does, the whole folder is a self-paced kit. The rest are self-contained continuations you work through at your own pace, and they explain properly whatever the class used quickly.
 
 If you have never programmed, open =F00/00_01_notebooks_and_kernels.ipynb= first. It takes twenty minutes and it prevents the one confusion that otherwise costs people an evening.
 
@@ -61,4 +65,4 @@ The container and the =uv= path install exactly the same packages, pinned in =py
 The course agent for the first weeks is Google Antigravity, on its free tier. Setup and sign-in are in [[file:docs/agent-antigravity.org]]. Any agent you already have is welcome too. What the course asks is not which tool you use but that you can say what it did and what you verified.
 
 * Licenses
-Course code and notebooks are MIT (see =LICENSE=), so reuse them freely. Data files carry their own terms, listed in =P01/data/README.org=: OpenStreetMap extracts are ODbL 1.0 and require attribution, public-record boundaries are free to use.
+Course code and notebooks are MIT (see =LICENSE=), so reuse them freely. Data files carry their own terms, listed in each folder's =data/README.org=. OpenStreetMap extracts are ODbL 1.0 and require attribution. The State's boundaries and parcel composite are public records that ask for an acknowledgement of NJOGIS. The Municipality of Princeton's layers are public records under OPRA whose publisher states no licence, which we say plainly rather than assume. Census files are US federal public domain. No file in this repository names a person; owner name, owner mailing address and reporter columns were never requested from the services that publish them, and a parcel's own street location is kept because it names land, not a person.
