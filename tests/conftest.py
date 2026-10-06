@@ -120,7 +120,19 @@ def rasters04():
 
 
 # Precept 03b, the flight's photographs through the software's stages.
-P03B_DATA = REPO / "P03b" / "data"
+P03B_KIT = REPO / "P03b"
+P03B_DATA = P03B_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def sfm():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("sfm_tools_for_tests", P03B_KIT / "sfm_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 @pytest.fixture(scope="session")
