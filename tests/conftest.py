@@ -117,3 +117,17 @@ def rasters04():
     yield opened
     for src in opened.values():
         src.close()
+
+
+# Precept 03b, the flight's photographs through the software's stages.
+P03B_DATA = REPO / "P03b" / "data"
+
+
+@pytest.fixture(scope="session")
+def p03b():
+    return json.loads((P03B_DATA / "ground_truth.json").read_text())["p03b"]
+
+
+@pytest.fixture(scope="session")
+def choices03b():
+    return json.loads((P03B_DATA / "flight.json").read_text())["p03b"]

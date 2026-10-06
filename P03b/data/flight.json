@@ -1,0 +1,219 @@
+{
+ "label": "flight-2026-09-23",
+ "date": "2026-09-23",
+ "site": "Poe Field",
+ "timezone": "America/New_York",
+ "aircraft": "DJI Mini 3",
+ "camera_model": "FC3682",
+ "image_px": [
+  4000,
+  3000
+ ],
+ "aspect": "4:3",
+ "focal_mm": 6.72,
+ "focal_35mm_equivalent": 24,
+ "altitude_agl_m": 79.3,
+ "n_photos": 85,
+ "interval_s": 3.0,
+ "speed_m_s": 4.69,
+ "app": "hand flown by the students with the aircraft's own app, timed shots every 3 s",
+ "pattern": "hand flown by the students in a strong wind, tracks back and forth across the field and along its edges at 3 s intervals rather than the planned strips; 337 photographs above 70 m, of which 85 were kept by a spatial thinning (at least 14 m apart, 6 m near the pinned window), see 80m_selection_rule.txt beside the photographs",
+ "gcp_used": false,
+ "photos_checked_for_people": true,
+ "people_note": "checked 2026-09-29 by the instructor on a contact sheet of the 85 photographs: figures on the lawn and the paths are a few pixels tall at 2.8 cm, no face or plate is resolvable; the kit ships downsized photographs and the products only",
+ "samples": [
+  {
+   "file": "photo_01.jpg",
+   "from": "DJI_0799.JPG",
+   "time_local": "2026-09-23 15:06:53",
+   "bytes": 813917
+  },
+  {
+   "file": "photo_02.jpg",
+   "from": "DJI_0859.JPG",
+   "time_local": "2026-09-23 15:09:53",
+   "bytes": 797487
+  },
+  {
+   "file": "photo_03.jpg",
+   "from": "DJI_0927.JPG",
+   "time_local": "2026-09-23 15:13:17",
+   "bytes": 927034
+  },
+  {
+   "file": "photo_04.jpg",
+   "from": "DJI_0101.JPG",
+   "time_local": "2026-09-23 15:21:56",
+   "bytes": 850335
+  }
+ ],
+ "other_flights": {},
+ "processing": {
+  "software": "OpenDroneMap",
+  "project": "odm_80m",
+  "orthophoto_full": {
+   "crs": "EPSG:32618",
+   "res_cm": 3.0,
+   "width": 13456,
+   "height": 9646,
+   "bands": 4,
+   "dtype": "uint8",
+   "transform": [
+    0.029999999783628422,
+    0.0,
+    529117.1127949754,
+    0.0,
+    -0.029999005471545645,
+    4466069.612642194
+   ],
+   "bounds": [
+    529117.1127949754,
+    4465780.242235416,
+    529520.7927920639,
+    4466069.612642194
+   ],
+   "compression": "Compression.deflate",
+   "overviews": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+   ],
+   "colorinterp": [
+    "red",
+    "green",
+    "blue",
+    "alpha"
+   ],
+   "bytes": 200697777
+  },
+  "date": "2026-09-29"
+ },
+ "selection": {
+  "source": "drone-01, the first flight of 23 September (15:06 to 15:25 local), photographs above 70 m",
+  "kept": 85,
+  "of": 337,
+  "rule": "at least 14 m from every kept photograph, or 6 m within 80 m of the pinned window's centre",
+  "chosen": "2026-09-29"
+ },
+ "p03b": {
+  "window": {
+   "centre": [
+    529475.2,
+    4465930.7
+   ],
+   "half_m": [
+    25.0,
+    17.5
+   ],
+   "bounds": [
+    529450.2,
+    4465913.2,
+    529500.2,
+    4465948.2
+   ],
+   "centre_local": [
+    139.2,
+    1.7
+   ],
+   "surface_median_m": -82.65,
+   "crs": "EPSG:32618",
+   "note": "the pinned 50 by 35 m window of P03, a footpath junction, tree crowns and the corner of a flat roof"
+  },
+  "offset": [
+   529336.0,
+   4465929.0
+  ],
+  "crs": "EPSG:32618",
+  "photos": {
+   "a": {
+    "name": "DJI_0823.JPG",
+    "kit_file": "photo_a.jpg",
+    "coverage": 1.0,
+    "principal_ray_distance_m": 25.84,
+    "tilt_deg": 1.23,
+    "shot_index": 11
+   },
+   "b": {
+    "name": "DJI_0822.JPG",
+    "kit_file": "photo_b.jpg",
+    "coverage": 0.9017,
+    "principal_ray_distance_m": 29.87,
+    "tilt_deg": 1.19,
+    "shot_index": 10
+   },
+   "c": {
+    "name": "DJI_0892.JPG",
+    "kit_file": "photo_c.jpg",
+    "coverage": 0.8726,
+    "principal_ray_distance_m": 35.04,
+    "tilt_deg": 1.4,
+    "shot_index": 42
+   }
+  },
+  "pair": {
+   "a": "DJI_0823.JPG",
+   "b": "DJI_0822.JPG",
+   "baseline_m": 11.16,
+   "matches": 2584,
+   "rule": "photo_a and its strongest match partner at a baseline of at least 8.0 m"
+  },
+  "group": [
+   "DJI_0814.JPG",
+   "DJI_0815.JPG",
+   "DJI_0816.JPG",
+   "DJI_0822.JPG",
+   "DJI_0823.JPG",
+   "DJI_0882.JPG",
+   "DJI_0883.JPG",
+   "DJI_0892.JPG"
+  ],
+  "group_size": 8,
+  "group_pairs": {
+   "DJI_0814.JPG__DJI_0815.JPG": 2291,
+   "DJI_0814.JPG__DJI_0816.JPG": 1171,
+   "DJI_0814.JPG__DJI_0822.JPG": 857,
+   "DJI_0814.JPG__DJI_0823.JPG": 451,
+   "DJI_0814.JPG__DJI_0882.JPG": 961,
+   "DJI_0814.JPG__DJI_0883.JPG": 694,
+   "DJI_0815.JPG__DJI_0816.JPG": 2458,
+   "DJI_0815.JPG__DJI_0822.JPG": 1287,
+   "DJI_0815.JPG__DJI_0823.JPG": 897,
+   "DJI_0815.JPG__DJI_0882.JPG": 660,
+   "DJI_0815.JPG__DJI_0883.JPG": 750,
+   "DJI_0815.JPG__DJI_0892.JPG": 396,
+   "DJI_0816.JPG__DJI_0822.JPG": 1863,
+   "DJI_0816.JPG__DJI_0823.JPG": 1348,
+   "DJI_0816.JPG__DJI_0882.JPG": 414,
+   "DJI_0816.JPG__DJI_0883.JPG": 918,
+   "DJI_0816.JPG__DJI_0892.JPG": 485,
+   "DJI_0822.JPG__DJI_0823.JPG": 2584,
+   "DJI_0822.JPG__DJI_0882.JPG": 461,
+   "DJI_0822.JPG__DJI_0883.JPG": 800,
+   "DJI_0822.JPG__DJI_0892.JPG": 573,
+   "DJI_0823.JPG__DJI_0882.JPG": 247,
+   "DJI_0823.JPG__DJI_0883.JPG": 595,
+   "DJI_0823.JPG__DJI_0892.JPG": 507,
+   "DJI_0882.JPG__DJI_0883.JPG": 2411,
+   "DJI_0882.JPG__DJI_0892.JPG": 1692,
+   "DJI_0883.JPG__DJI_0892.JPG": 2286
+  },
+  "readout_ms": 23.0,
+  "feature_process_size": 2000,
+  "sample_px": 2000,
+  "to_map": {
+   "scale": 0.999611,
+   "angle_deg": 0.2236,
+   "note": "the affine that turns the adjustment's own frame onto the map frame, fitted on the points"
+  },
+  "reference_lla": {
+   "latitude": 40.3433942485788,
+   "longitude": -74.65458881993368,
+   "altitude": 0.0
+  },
+  "dem_res_m": 0.05000000000000288,
+  "depth_step_m": 0.25
+ }
+}
