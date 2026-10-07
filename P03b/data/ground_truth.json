@@ -1,0 +1,679 @@
+{
+  "generated": "2026-10-06",
+  "p03b": {
+    "flight": "flight-2026-09-23",
+    "choices": {
+      "window": {
+        "centre": [
+          529475.2,
+          4465930.7
+        ],
+        "half_m": [
+          25.0,
+          17.5
+        ],
+        "bounds": [
+          529450.2,
+          4465913.2,
+          529500.2,
+          4465948.2
+        ],
+        "centre_local": [
+          139.2,
+          1.7
+        ],
+        "surface_median_m": -82.65,
+        "crs": "EPSG:32618",
+        "note": "the pinned 50 by 35 m window of P03, a footpath junction, tree crowns and the corner of a flat roof"
+      },
+      "offset": [
+        529336.0,
+        4465929.0
+      ],
+      "crs": "EPSG:32618",
+      "photos": {
+        "a": {
+          "name": "DJI_0823.JPG",
+          "kit_file": "photo_a.jpg",
+          "coverage": 1.0,
+          "principal_ray_distance_m": 25.84,
+          "tilt_deg": 1.23,
+          "shot_index": 11
+        },
+        "b": {
+          "name": "DJI_0822.JPG",
+          "kit_file": "photo_b.jpg",
+          "coverage": 0.9017,
+          "principal_ray_distance_m": 29.87,
+          "tilt_deg": 1.19,
+          "shot_index": 10
+        },
+        "c": {
+          "name": "DJI_0892.JPG",
+          "kit_file": "photo_c.jpg",
+          "coverage": 0.8726,
+          "principal_ray_distance_m": 35.04,
+          "tilt_deg": 1.4,
+          "shot_index": 42
+        }
+      },
+      "pair": {
+        "a": "DJI_0823.JPG",
+        "b": "DJI_0822.JPG",
+        "baseline_m": 11.16,
+        "matches": 2584,
+        "rule": "photo_a and its strongest match partner at a baseline of at least 8.0 m"
+      },
+      "group": [
+        "DJI_0814.JPG",
+        "DJI_0815.JPG",
+        "DJI_0816.JPG",
+        "DJI_0822.JPG",
+        "DJI_0823.JPG",
+        "DJI_0882.JPG",
+        "DJI_0883.JPG",
+        "DJI_0892.JPG"
+      ],
+      "group_size": 8,
+      "group_pairs": {
+        "DJI_0814.JPG__DJI_0815.JPG": 2291,
+        "DJI_0814.JPG__DJI_0816.JPG": 1171,
+        "DJI_0814.JPG__DJI_0822.JPG": 857,
+        "DJI_0814.JPG__DJI_0823.JPG": 451,
+        "DJI_0814.JPG__DJI_0882.JPG": 961,
+        "DJI_0814.JPG__DJI_0883.JPG": 694,
+        "DJI_0815.JPG__DJI_0816.JPG": 2458,
+        "DJI_0815.JPG__DJI_0822.JPG": 1287,
+        "DJI_0815.JPG__DJI_0823.JPG": 897,
+        "DJI_0815.JPG__DJI_0882.JPG": 660,
+        "DJI_0815.JPG__DJI_0883.JPG": 750,
+        "DJI_0815.JPG__DJI_0892.JPG": 396,
+        "DJI_0816.JPG__DJI_0822.JPG": 1863,
+        "DJI_0816.JPG__DJI_0823.JPG": 1348,
+        "DJI_0816.JPG__DJI_0882.JPG": 414,
+        "DJI_0816.JPG__DJI_0883.JPG": 918,
+        "DJI_0816.JPG__DJI_0892.JPG": 485,
+        "DJI_0822.JPG__DJI_0823.JPG": 2584,
+        "DJI_0822.JPG__DJI_0882.JPG": 461,
+        "DJI_0822.JPG__DJI_0883.JPG": 800,
+        "DJI_0822.JPG__DJI_0892.JPG": 573,
+        "DJI_0823.JPG__DJI_0882.JPG": 247,
+        "DJI_0823.JPG__DJI_0883.JPG": 595,
+        "DJI_0823.JPG__DJI_0892.JPG": 507,
+        "DJI_0882.JPG__DJI_0883.JPG": 2411,
+        "DJI_0882.JPG__DJI_0892.JPG": 1692,
+        "DJI_0883.JPG__DJI_0892.JPG": 2286
+      },
+      "readout_ms": 23.0,
+      "feature_process_size": 2000,
+      "sample_px": 2000,
+      "to_map": {
+        "scale": 0.999611,
+        "angle_deg": 0.2236,
+        "note": "the affine that turns the adjustment's own frame onto the map frame, fitted on the points"
+      },
+      "reference_lla": {
+        "latitude": 40.3433942485788,
+        "longitude": -74.65458881993368,
+        "altitude": 0.0
+      },
+      "dem_res_m": 0.05000000000000288,
+      "depth_step_m": 0.25,
+      "roof": {
+        "polygon": [
+          [
+            529548.21,
+            4465924.58
+          ],
+          [
+            529545.58,
+            4465922.11
+          ],
+          [
+            529542.87,
+            4465919.57
+          ],
+          [
+            529550.44,
+            4465906.76
+          ],
+          [
+            529543.91,
+            4465902.36
+          ],
+          [
+            529539.09,
+            4465899.39
+          ],
+          [
+            529546.82,
+            4465885.9
+          ],
+          [
+            529554.1,
+            4465871.96
+          ],
+          [
+            529550.42,
+            4465869.95
+          ],
+          [
+            529520.06,
+            4465853.05
+          ],
+          [
+            529505.71,
+            4465877.64
+          ],
+          [
+            529504.16,
+            4465876.86
+          ],
+          [
+            529504.57,
+            4465876.02
+          ],
+          [
+            529499.49,
+            4465873.03
+          ],
+          [
+            529487.7,
+            4465892.85
+          ],
+          [
+            529476.31,
+            4465911.97
+          ],
+          [
+            529478.22,
+            4465912.96
+          ],
+          [
+            529471.33,
+            4465924.12
+          ],
+          [
+            529500.77,
+            4465945.75
+          ],
+          [
+            529501.81,
+            4465944.15
+          ],
+          [
+            529504.3,
+            4465945.7
+          ],
+          [
+            529510.61,
+            4465938.45
+          ],
+          [
+            529513.45,
+            4465940.2
+          ],
+          [
+            529516.02,
+            4465941.79
+          ],
+          [
+            529511.7,
+            4465950.75
+          ],
+          [
+            529507.96,
+            4465960.46
+          ],
+          [
+            529523.2,
+            4465966.22
+          ],
+          [
+            529548.21,
+            4465924.58
+          ]
+        ],
+        "area_m2": 5097.9,
+        "centre": [
+          529516.39,
+          4465908.34
+        ],
+        "corner": [
+          529471.33,
+          4465924.12
+        ],
+        "window_overlap_m2": 584.6,
+        "building": "university",
+        "rule": "the OpenStreetMap building of site.gpkg (layer buildings_site) with the largest overlap with the window, in the products' system; the corner is the footprint vertex inside the window nearest the window's centre"
+      }
+    },
+    "features": {
+      "per_photograph": {
+        "min": 856.0,
+        "max": 7530.0,
+        "mean": 4629.0,
+        "median": 4772.0
+      },
+      "reconstructed_mean": 4343.0,
+      "pair": {
+        "a": 3664,
+        "b": 4418,
+        "a_name": "DJI_0823.JPG",
+        "b_name": "DJI_0822.JPG"
+      },
+      "scale_px_at_sample": {
+        "p5": 1.88,
+        "p50": 2.75,
+        "p95": 7.92
+      },
+      "field_share_of_frame": 0.159,
+      "harris_top5000": {
+        "inside_field": 518,
+        "outside_field": 4482,
+        "per_megapixel_inside": 1085.0,
+        "per_megapixel_outside": 1777.0
+      },
+      "software": {
+        "inside_field": 898,
+        "outside_field": 2766,
+        "per_megapixel_inside": 1881.0,
+        "per_megapixel_outside": 1096.0
+      },
+      "observed_points_inside_field_share": 0.238,
+      "observed_points": 3383,
+      "descriptor_range": [
+        0,
+        148
+      ],
+      "feature_process_size": 2000,
+      "sample_px": 2000,
+      "sample_size": [
+        2000,
+        1500
+      ]
+    },
+    "overlap": {
+      "footprint_m": [
+        113.3,
+        85.0
+      ],
+      "predicted_pairs": {
+        "any": 1642,
+        "at_least_20_percent": 1048,
+        "at_least_50_percent": 407
+      },
+      "candidate_pairs": 762,
+      "matched_pairs": 672,
+      "view_graph_edges": 1884,
+      "matched_among_predicted_20": 659,
+      "matched_not_predicted": 0,
+      "matches_total": 752718,
+      "matches_per_pair_mean": 1120.1,
+      "readout_ms": 23.0,
+      "speed_m_s": 4.69,
+      "readout_shift_px": 3.81,
+      "unknowns_before_points": 518
+    },
+    "pair": {
+      "a": "DJI_0823.JPG",
+      "b": "DJI_0822.JPG",
+      "baseline_m": 11.16,
+      "software_matches": 2584,
+      "epipolar_direction_deg_from_u": -86.3,
+      "ratio_0_8": {
+        "candidates": 2844,
+        "inliers": 2614,
+        "inlier_share": 0.919
+      },
+      "sampson_threshold_px": 1.0
+    },
+    "tracks": {
+      "records": 370295,
+      "tracks": 81028,
+      "observations": 369157,
+      "reconstructed_points": 80679,
+      "histogram": {
+        "2": 33022,
+        "3": 13397,
+        "4": 8622,
+        "5": 5478,
+        "6": 3924,
+        "7": 2936,
+        "8": 2465,
+        "9": 2124,
+        "10": 1728,
+        "11+": 7332
+      },
+      "mean_length": 4.57,
+      "max_length": 25,
+      "report_average_track_length": 4.575626866966621,
+      "group": {
+        "pairs_with_matches": 27,
+        "matches": 30057,
+        "union_find_tracks": 10482,
+        "histogram": {
+          "2": 5847,
+          "3": 2478,
+          "4": 1051,
+          "5": 592,
+          "6": 246,
+          "7": 179,
+          "8": 82,
+          "9": 2,
+          "10": 3,
+          "11+": 2
+        },
+        "mean_length": 2.84,
+        "software_tracks_within_group": 10573,
+        "software_histogram": {
+          "2": 5876,
+          "3": 2552,
+          "4": 1047,
+          "5": 589,
+          "6": 250,
+          "7": 176,
+          "8": 83,
+          "9": 0,
+          "10": 0,
+          "11+": 0
+        }
+      }
+    },
+    "block": {
+      "shots": 85,
+      "points": 80679,
+      "observations": 369157,
+      "unknowns": 242555,
+      "equations": 738314,
+      "redundancy": 495759,
+      "camera_unknowns": 8,
+      "residual_a": {
+        "median_px": 0.683,
+        "mean_under_20_px": 1.045,
+        "share_beyond_20_px": 0.0003,
+        "observations": 3383,
+        "map_frame_median_px": 2.659,
+        "with_prior_camera_median_px": 42.6
+      },
+      "report_reprojection_error_px": 1.0119293788760972,
+      "frames": {
+        "scale": 0.999611,
+        "angle_deg": 0.2236,
+        "reference_lla": {
+          "latitude": 40.3433942485788,
+          "longitude": -74.65458881993368,
+          "altitude": 0.0
+        },
+        "offset": [
+          529336.0,
+          4465929.0
+        ],
+        "crs": "EPSG:32618"
+      },
+      "receiver": {
+        "rms_e_m": 0.511,
+        "rms_n_m": 0.521,
+        "rms_up_m": 0.709,
+        "mean_3d_m": 0.903,
+        "median_3d_m": 0.817,
+        "report_average_error_m": 0.9034515016541311,
+        "assumed_accuracy_m": 3
+      },
+      "orientation": {
+        "yaw_difference_median_deg": -0.57,
+        "yaw_difference_p95_abs_deg": 2.35,
+        "tilt_median_deg": 1.08,
+        "tilt_max_deg": 1.8,
+        "gimbal_pitch_written_deg": 0.0
+      },
+      "calibration": {
+        "focal_prior_px": 2666.7,
+        "focal_px": 2548.7,
+        "focal_from_exif_px": 2800.0,
+        "focal_change_percent": -4.42,
+        "principal_point_px": [
+          8.02,
+          -3.79
+        ],
+        "k1": 0.06731,
+        "k2": -0.09612,
+        "k3": 0.05211,
+        "p1": -0.000126,
+        "p2": -0.000202,
+        "radial_distortion_at_corner_px": 23.5
+      },
+      "mini_bundle": {
+        "shots": 8,
+        "points": 2129,
+        "observations": 10134,
+        "dropped_observations": 395,
+        "unknowns": 6435,
+        "equations": 20268,
+        "redundancy": 13833,
+        "rms_software_px": 0.987,
+        "rms_start_px": 0.987,
+        "rms_perturbed_px": 14.44,
+        "rms_solved_px": 0.849,
+        "perturbation_deg": 0.3,
+        "perturbation_m": 0.5,
+        "centre_recovery_median_m": 0.152,
+        "centre_perturbed_median_m": 0.358,
+        "height_shift_median_m": -0.112,
+        "status": 2,
+        "focal": 0.6371850905616633
+      },
+      "group": [
+        "DJI_0814.JPG",
+        "DJI_0815.JPG",
+        "DJI_0816.JPG",
+        "DJI_0822.JPG",
+        "DJI_0823.JPG",
+        "DJI_0882.JPG",
+        "DJI_0883.JPG",
+        "DJI_0892.JPG"
+      ]
+    },
+    "depth": {
+      "photograph": "DJI_0823.JPG",
+      "size": [
+        1000,
+        750
+      ],
+      "min_m": 50.11,
+      "max_m": 89.98,
+      "median_m": 73.12,
+      "valid_share": 0.769,
+      "confidence_median": 4.54,
+      "neighbours": [
+        "DJI_0822.JPG",
+        "DJI_0816.JPG",
+        "DJI_0815.JPG",
+        "DJI_0883.JPG"
+      ],
+      "step_m": 0.25,
+      "patch_px": 15,
+      "search": {
+        "pixels": 40,
+        "within_half_metre_share": 0.875,
+        "median_abs_error_m": 0.2
+      }
+    },
+    "dense": {
+      "points": 356691,
+      "of_total": 12713513,
+      "per_m2": 203.8,
+      "views": {
+        "min": 2,
+        "max": 10,
+        "median": 3.0,
+        "histogram": {
+          "2": 129403,
+          "3": 82620,
+          "4": 72956,
+          "5": 25520,
+          "6": 16468,
+          "7": 10674,
+          "8": 11337,
+          "9": 7535,
+          "10": 178
+        }
+      },
+      "per_m2_on_ground_cells": 178.1,
+      "per_m2_above_3m": 303.3,
+      "ground_cells_share": 0.625,
+      "z_range_m": [
+        -89.88,
+        -69.56
+      ],
+      "class_share": {
+        "0": 0.0,
+        "1": 0.012,
+        "2": 0.646,
+        "3": 0.254,
+        "6": 0.089
+      }
+    },
+    "mesh": {
+      "vertices": 5674,
+      "faces": 11068,
+      "vertices_total": 196002,
+      "faces_total": 391224,
+      "delaunay": {
+        "points": 25985,
+        "faces": 51942,
+        "thinning_m": 0.25
+      }
+    },
+    "dem": {
+      "window": [
+        1000,
+        700
+      ],
+      "res_m": 0.05000000000000288,
+      "crs": "EPSG:32618",
+      "dsm_range_m": [
+        -89.72,
+        -69.64
+      ],
+      "dtm_range_m": [
+        -89.83,
+        -73.84
+      ],
+      "height_p50_m": 0.04,
+      "height_p95_m": 9.59,
+      "height_max_m": 14.36,
+      "gridding": {
+        "filled_share": 0.382,
+        "rms_vs_software_m": 1.483,
+        "median_abs_vs_software_m": 0.028,
+        "p95_abs_vs_software_m": 2.69
+      },
+      "ground_by_hand": {
+        "rms_vs_software_m": 1.861,
+        "median_abs_vs_software_m": 0.04,
+        "p95_abs_vs_software_m": 3.148,
+        "under_crowns_median_m": -0.126,
+        "ground_share": 0.696,
+        "windows_m": [
+          1,
+          2,
+          4,
+          8,
+          12,
+          18
+        ],
+        "slope": 0.15,
+        "threshold_m": 0.5
+      }
+    },
+    "ortho": {
+      "photo_a": "DJI_0823.JPG",
+      "photo_b": "DJI_0822.JPG",
+      "photo_c": "DJI_0892.JPG",
+      "coverage_a": 1.0,
+      "coverage_b": 0.9017,
+      "roof": {
+        "cells": 233657,
+        "area_m2": 584.1,
+        "ground_level_m": -88.29,
+        "height_m": 11.01,
+        "height_above_dtm_m": 0.01,
+        "terrain_model_kept_it": true,
+        "centre_distance_from_nadir_m": 24.3,
+        "lean_on_ground_plane_m": 3.66,
+        "lean_on_ground_plane_px_at_sample": 64.0,
+        "rule": "the OpenStreetMap footprint of the kit's building (choices.roof, layer buildings_site of site.gpkg) rasterised onto the window's grid; the height is the median of the surface model over it, above the terrain model's lower quartile"
+      },
+      "covered_share": 1.0,
+      "correlation_with_mosaic": 0.882,
+      "median_abs_difference_dn": 11.7,
+      "share_beyond_40_dn": 0.1158,
+      "two_photograph_mosaic_share_from_b": 0.277,
+      "flying_height_over_window_m": 73.1,
+      "nadir_to_window_centre_m": 24.9,
+      "gsd_at_sample_cm": 5.74,
+      "lean_of_p95_height_m": 3.27,
+      "lean_of_p95_height_px_at_sample": 57.0,
+      "mosaic_res_m": 0.03,
+      "mosaic_size": [
+        1667,
+        1167
+      ]
+    },
+    "whole": {
+      "ortho": {
+        "width": 3741,
+        "height": 2777,
+        "res_cm": 10.0,
+        "bands": 3,
+        "bounds": [
+          529146.66,
+          4465791.91,
+          529520.79,
+          4466069.61
+        ],
+        "crs": "EPSG:32618"
+      },
+      "dsm": {
+        "width": 1497,
+        "height": 1111,
+        "res_m": 0.2499,
+        "range_m": [
+          -94.86,
+          -61.36
+        ],
+        "valid_share": 0.761
+      },
+      "dtm": {
+        "width": 748,
+        "height": 555,
+        "res_m": 0.5002,
+        "range_m": [
+          -94.79,
+          -68.98
+        ],
+        "valid_share": 0.762
+      },
+      "dense_sample": {
+        "points": 100000,
+        "of_total": 12713513,
+        "class_share": {
+          "1": 0.024,
+          "2": 0.69,
+          "3": 0.19,
+          "6": 0.096
+        }
+      },
+      "mesh_whole": {
+        "vertices": 49001,
+        "faces": 97777,
+        "vertices_total": 196002,
+        "faces_total": 391224,
+        "thinning": 4,
+        "max_edge_m": 20.0
+      },
+      "window_inside_whole": true
+    }
+  }
+}

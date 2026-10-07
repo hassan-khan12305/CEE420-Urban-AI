@@ -40,7 +40,9 @@ P03/output/
 P03/data/full/
 P03/data/my_*
 P04/output/
+P03b/output/
 P04/data/my_*
+P03b/data/my_*
 
 # point clouds never travel through git; the thinned sample in P03/data/ stands in for them
 *.laz

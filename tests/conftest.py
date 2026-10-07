@@ -117,3 +117,29 @@ def rasters04():
     yield opened
     for src in opened.values():
         src.close()
+
+
+# Precept 03b, the flight's photographs through the software's stages.
+P03B_KIT = REPO / "P03b"
+P03B_DATA = P03B_KIT / "data"
+
+
+@pytest.fixture(scope="session")
+def sfm():
+    """The kit's toolbox, loaded from its file so that no sys.path entry leaks into other tests."""
+    from importlib.util import module_from_spec, spec_from_file_location
+
+    spec = spec_from_file_location("sfm_tools_for_tests", P03B_KIT / "sfm_tools.py")
+    module = module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+@pytest.fixture(scope="session")
+def p03b():
+    return json.loads((P03B_DATA / "ground_truth.json").read_text())["p03b"]
+
+
+@pytest.fixture(scope="session")
+def choices03b():
+    return json.loads((P03B_DATA / "flight.json").read_text())["p03b"]

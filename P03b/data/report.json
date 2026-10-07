@@ -1,0 +1,993 @@
+{
+ "flight": "flight-2026-09-23",
+ "software": "OpenDroneMap",
+ "version": "3.6.2",
+ "total_time_s": 1293.8,
+ "last_run_s": 200.36,
+ "benchmark_method": {
+  "dataset": "benchmark",
+  "split": "benchmark",
+  "merge": "benchmark",
+  "opensfm": "file times",
+  "openmvs": "file times",
+  "odm_filterpoints": "file times",
+  "odm_meshing": "file times",
+  "mvs_texturing": "benchmark",
+  "odm_georeferencing": "benchmark",
+  "odm_dem": "benchmark",
+  "odm_orthophoto": "benchmark",
+  "odm_report": "benchmark",
+  "odm_postprocess": "benchmark"
+ },
+ "stats": {
+  "processing_statistics": {
+   "steps_times": {
+    "Feature Extraction": 45.086362104,
+    "Features Matching": 26.101681428000006,
+    "Tracks Merging": 5.153006376999997,
+    "Reconstruction": 89.12044783099998,
+    "Total Time": 165.46149773999997
+   },
+   "date": "29/09/2026 at 12:54:12",
+   "start_date": "23/09/2026 at 15:06:53",
+   "end_date": "23/09/2026 at 15:21:56",
+   "area": 60950.04268545302
+  },
+  "features_statistics": {
+   "detected_features": {
+    "min": 856,
+    "max": 7530,
+    "mean": 4629,
+    "median": 4772
+   },
+   "reconstructed_features": {
+    "min": 752,
+    "max": 7278,
+    "mean": 4343,
+    "median": 4474
+   }
+  },
+  "reconstruction_statistics": {
+   "components": 1,
+   "has_gps": true,
+   "has_gcp": false,
+   "initial_points_count": 81028,
+   "initial_shots_count": 85,
+   "reconstructed_points_count": 80679,
+   "reconstructed_shots_count": 85,
+   "observations_count": 369157,
+   "average_track_length": 4.575626866966621,
+   "average_track_length_over_two": 6.343715378665942,
+   "histogram_track_length": {
+    "2": 32840,
+    "3": 13328,
+    "4": 8586,
+    "5": 5460,
+    "6": 3908,
+    "7": 2925,
+    "8": 2460,
+    "9": 2118,
+    "10": 1725,
+    "11": 1499,
+    "12": 1268,
+    "13": 1107,
+    "14": 914,
+    "15": 727,
+    "16": 556,
+    "17": 458,
+    "18": 310,
+    "19": 196,
+    "20": 149,
+    "21": 69,
+    "22": 40,
+    "23": 24,
+    "24": 10,
+    "25": 2
+   },
+   "reprojection_error_normalized": 0.16456843476783198,
+   "reprojection_error_pixels": 1.0119293788760972,
+   "reprojection_error_angular": 0.00033061702993627016,
+   "reprojection_histogram_normalized": [
+    [
+     35719.0,
+     54073.0,
+     56918.0,
+     50850.0,
+     41712.0,
+     32533.0,
+     24330.0,
+     17793.0,
+     12609.0,
+     8931.0,
+     6367.0,
+     4477.0,
+     3278.0,
+     2237.0,
+     1651.0,
+     1169.0,
+     878.0,
+     586.0,
+     458.0,
+     307.0,
+     242.0,
+     158.0,
+     116.0,
+     74.0,
+     66.0,
+     30.0,
+     33.0,
+     15.0,
+     2.0,
+     3.0
+    ],
+    [
+     2.453867787596666e-07,
+     0.03783557398445699,
+     0.07567090258213523,
+     0.11350623117981345,
+     0.1513415597774917,
+     0.18917688837516994,
+     0.22701221697284815,
+     0.2648475455705264,
+     0.30268287416820466,
+     0.3405182027658829,
+     0.37835353136356115,
+     0.4161888599612394,
+     0.4540241885589176,
+     0.4918595171565958,
+     0.5296948457542741,
+     0.5675301743519523,
+     0.6053655029496305,
+     0.6432008315473088,
+     0.681036160144987,
+     0.7188714887426653,
+     0.7567068173403435,
+     0.7945421459380217,
+     0.8323774745357,
+     0.8702128031333782,
+     0.9080481317310564,
+     0.9458834603287346,
+     0.9837187889264128,
+     1.021554117524091,
+     1.0593894461217692,
+     1.0972247747194475,
+     1.1350601033171257
+    ]
+   ],
+   "reprojection_histogram_pixels": [
+    [
+     16144.0,
+     25261.0,
+     31090.0,
+     34212.0,
+     33485.0,
+     31891.0,
+     28746.0,
+     25354.0,
+     21687.0,
+     18128.0,
+     15111.0,
+     12382.0,
+     10472.0,
+     8674.0,
+     7045.0,
+     5846.0,
+     5097.0,
+     4262.0,
+     3575.0,
+     3098.0,
+     2718.0,
+     2354.0,
+     2076.0,
+     1765.0,
+     1554.0,
+     1397.0,
+     1211.0,
+     1157.0,
+     944.0,
+     879.0
+    ],
+    [
+     1.8034477260277821e-06,
+     0.13332453502922664,
+     0.2666472666107273,
+     0.3999699981922279,
+     0.5332927297737285,
+     0.6666154613552292,
+     0.7999381929367297,
+     0.9332609245182304,
+     1.066583656099731,
+     1.1999063876812317,
+     1.3332291192627324,
+     1.466551850844233,
+     1.5998745824257334,
+     1.733197314007234,
+     1.8665200455887347,
+     1.9998427771702354,
+     2.133165508751736,
+     2.2664882403332363,
+     2.399810971914737,
+     2.5331337034962376,
+     2.6664564350777384,
+     2.799779166659239,
+     2.9331018982407397,
+     3.06642462982224,
+     3.1997473614037406,
+     3.3330700929852415,
+     3.466392824566742,
+     3.599715556148243,
+     3.733038287729743,
+     3.866361019311244,
+     3.9996837508927445
+    ]
+   ],
+   "reprojection_histogram_angular": [
+    [
+     21081.0,
+     33232.0,
+     40046.0,
+     40949.0,
+     38024.0,
+     33146.0,
+     27814.0,
+     23607.0,
+     18977.0,
+     15205.0,
+     12286.0,
+     9605.0,
+     7932.0,
+     6548.0,
+     5270.0,
+     4462.0,
+     3516.0,
+     3117.0,
+     2626.0,
+     2216.0,
+     1878.0,
+     1554.0,
+     1315.0,
+     1021.0,
+     764.0,
+     600.0,
+     375.0,
+     270.0,
+     136.0,
+     43.0
+    ],
+    [
+     0.0,
+     5.188847267871136e-05,
+     0.00010377694535742272,
+     0.00015566541803613406,
+     0.00020755389071484544,
+     0.0002594423633935568,
+     0.00031133083607226813,
+     0.0003632193087509795,
+     0.0004151077814296909,
+     0.00046699625410840225,
+     0.0005188847267871136,
+     0.0005707731994658249,
+     0.0006226616721445363,
+     0.0006745501448232477,
+     0.000726438617501959,
+     0.0007783270901806704,
+     0.0008302155628593817,
+     0.0008821040355380931,
+     0.0009339925082168045,
+     0.0009858809808955158,
+     0.0010377694535742272,
+     0.0010896579262529385,
+     0.0011415463989316499,
+     0.0011934348716103613,
+     0.0012453233442890725,
+     0.001297211816967784,
+     0.0013491002896464954,
+     0.0014009887623252068,
+     0.001452877235003918,
+     0.0015047657076826294,
+     0.0015566541803613409
+    ]
+   ]
+  },
+  "camera_errors": {
+   "v2 dji fc3682 4000 3000 brown 0.6666": {
+    "initial_values": {
+     "k1": 0.0,
+     "k2": 0.0,
+     "k3": 0.0,
+     "p1": 0.0,
+     "p2": 0.0,
+     "focal": 0.6666666666666666,
+     "aspect_ratio": 1.0,
+     "cx": 0.0,
+     "cy": 0.0
+    },
+    "optimized_values": {
+     "k1": 0.06730542968795533,
+     "k2": -0.09611786156311738,
+     "k3": 0.0521112600616334,
+     "p1": -0.00012590815734918944,
+     "p2": -0.00020223741019940864,
+     "focal": 0.6371850905616633,
+     "aspect_ratio": 1.0,
+     "cx": 0.002005805079763596,
+     "cy": -0.0009467593432239146
+    },
+    "bias": {
+     "rotation": [
+      -0.0,
+      -0.0,
+      -0.0
+     ],
+     "translation": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "scale": 1.0
+    }
+   }
+  },
+  "rig_errors": {},
+  "gps_errors": {
+   "mean": {
+    "x": 1.5518781643637385e-05,
+    "y": 0.0024430439632879947,
+    "z": 0.0026494538186926024
+   },
+   "std": {
+    "x": 0.5107768083894136,
+    "y": 0.5213292420696374,
+    "z": 0.7093711435838694
+   },
+   "error": {
+    "x": 0.5107768086251648,
+    "y": 0.521334966313127,
+    "z": 0.7093760913330983
+   },
+   "average_error": 0.9034515016541311,
+   "ce90": 1.1019569660723343,
+   "le90": 1.3167779263961519
+  },
+  "gcp_errors": {},
+  "3d_errors": {
+   "mean": {
+    "x": 0.02684159072425836,
+    "y": 0.03055508808639535,
+    "z": 0.07650374447231464
+   },
+   "std": {
+    "x": 0.03472672027351937,
+    "y": 0.03517083965970546,
+    "z": 0.11430955598297084
+   },
+   "error": {
+    "x": 0.04389095685404747,
+    "y": 0.046589713138589846,
+    "z": 0.13754816431820943
+   },
+   "average_error": 0.09258209221941206,
+   "ce90": 0.09167041282107194,
+   "le90": 0.16861531763932192
+  },
+  "point_cloud_statistics": {
+   "file_size": 59788823,
+   "filename": "/datasets/odm_80m/odm_georeferencing/odm_georeferenced_model.laz",
+   "now": "2026-09-29T13:10:38+0000",
+   "pdal_version": "2.9.0 (git-version: 831631)",
+   "reader": "readers.las",
+   "stats": {
+    "bbox": {
+     "EPSG:4326": {
+      "bbox": {
+       "maxx": -74.65229805,
+       "maxy": 40.34475775,
+       "maxz": -61.218,
+       "minx": -74.65721318,
+       "miny": 40.3420256,
+       "minz": -102.376
+      },
+      "boundary": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          -74.65721318015706,
+          40.342040227812504,
+          -102.376
+         ],
+         [
+          -74.65719942434808,
+          40.34475775235559,
+          -102.376
+         ],
+         [
+          -74.65229804752572,
+          40.344743122381196,
+          -61.218
+         ],
+         [
+          -74.65231200000625,
+          40.34202559923518,
+          -61.218
+         ],
+         [
+          -74.65721318015706,
+          40.342040227812504,
+          -102.376
+         ]
+        ]
+       ]
+      }
+     },
+     "native": {
+      "bbox": {
+       "maxx": 529529.969,
+       "maxy": 4466079.483,
+       "maxz": -61.218,
+       "minx": 529113.693,
+       "miny": 4465777.841,
+       "minz": -102.376
+      },
+      "boundary": {
+       "type": "Polygon",
+       "coordinates": [
+        [
+         [
+          529113.693,
+          4465777.841,
+          -102.376
+         ],
+         [
+          529113.693,
+          4466079.483,
+          -102.376
+         ],
+         [
+          529529.969,
+          4466079.483,
+          -61.218
+         ],
+         [
+          529529.969,
+          4465777.841,
+          -61.218
+         ],
+         [
+          529113.693,
+          4465777.841,
+          -102.376
+         ]
+        ]
+       ]
+      }
+     }
+    },
+    "statistic": [
+     {
+      "average": 529334.6547,
+      "count": 12713513,
+      "maximum": 529529.969,
+      "minimum": 529113.693,
+      "name": "X",
+      "position": 0,
+      "stddev": 96.12526502,
+      "variance": 9240.066574
+     },
+     {
+      "average": 4465928.95,
+      "count": 12713513,
+      "maximum": 4466079.483,
+      "minimum": 4465777.841,
+      "name": "Y",
+      "position": 1,
+      "stddev": 55.84947415,
+      "variance": 3119.163763
+     },
+     {
+      "average": -84.43898661,
+      "count": 12713513,
+      "maximum": -61.218,
+      "minimum": -102.376,
+      "name": "Z",
+      "position": 2,
+      "stddev": 5.788543702,
+      "variance": 33.50723819
+     }
+    ]
+   },
+   "dense": true
+  },
+  "odm_processing_statistics": {
+   "total_time": 188.016901,
+   "total_time_human": "3.0m:8.0s",
+   "average_gsd": 2.773595155799502
+  }
+ },
+ "bootstrap": {
+  "image_pair": [
+   "DJI_0903.JPG",
+   "DJI_0936.JPG"
+  ],
+  "common_tracks": 3654,
+  "two_view_reconstruction": {
+   "5_point_inliers": 3654,
+   "plane_based_inliers": 3654,
+   "method": "plane_based"
+  },
+  "triangulated_points": 3654,
+  "decision": "Success",
+  "memory_usage": 458788864
+ },
+ "num_candidate_image_pairs": 1121,
+ "grow_steps": 83,
+ "features_per_image": {
+  "DJI_0907.JPG": 9815,
+  "DJI_0898.JPG": 10000,
+  "DJI_0867.JPG": 10000,
+  "DJI_0872.JPG": 10000,
+  "DJI_0906.JPG": 9520,
+  "DJI_0904.JPG": 10000,
+  "DJI_0864.JPG": 10000,
+  "DJI_0865.JPG": 10000,
+  "DJI_0859.JPG": 10000,
+  "DJI_0905.JPG": 10000,
+  "DJI_0901.JPG": 10000,
+  "DJI_0929.JPG": 10000,
+  "DJI_0849.JPG": 10000,
+  "DJI_0848.JPG": 10000,
+  "DJI_0860.JPG": 10000,
+  "DJI_0902.JPG": 9808,
+  "DJI_0862.JPG": 10000,
+  "DJI_0863.JPG": 10000,
+  "DJI_0903.JPG": 9859,
+  "DJI_0958.JPG": 9846,
+  "DJI_0964.JPG": 10000,
+  "DJI_0838.JPG": 10000,
+  "DJI_0810.JPG": 10000,
+  "DJI_0839.JPG": 10000,
+  "DJI_0965.JPG": 10000,
+  "DJI_0967.JPG": 10000,
+  "DJI_0807.JPG": 10000,
+  "DJI_0813.JPG": 10000,
+  "DJI_0812.JPG": 10000,
+  "DJI_0806.JPG": 10000,
+  "DJI_0966.JPG": 10000,
+  "DJI_0962.JPG": 10000,
+  "DJI_0816.JPG": 10000,
+  "DJI_0963.JPG": 10000,
+  "DJI_0022.JPG": 10000,
+  "DJI_0961.JPG": 10000,
+  "DJI_0815.JPG": 10000,
+  "DJI_0814.JPG": 10000,
+  "DJI_0960.JPG": 10000,
+  "DJI_0831.JPG": 10000,
+  "DJI_0946.JPG": 10000,
+  "DJI_0833.JPG": 10000,
+  "DJI_0947.JPG": 10000,
+  "DJI_0006.JPG": 10000,
+  "DJI_0002.JPG": 10000,
+  "DJI_0957.JPG": 9671,
+  "DJI_0823.JPG": 10000,
+  "DJI_0837.JPG": 10000,
+  "DJI_0836.JPG": 10000,
+  "DJI_0822.JPG": 10000,
+  "DJI_0942.JPG": 10000,
+  "DJI_0003.JPG": 10000,
+  "DJI_0997.JPG": 10000,
+  "DJI_0001.JPG": 10000,
+  "DJI_0968.JPG": 10000,
+  "DJI_0834.JPG": 10000,
+  "DJI_0809.JPG": 10000,
+  "DJI_0835.JPG": 10000,
+  "DJI_0941.JPG": 10000,
+  "DJI_0799.JPG": 10000,
+  "DJI_0852.JPG": 10000,
+  "DJI_0847.JPG": 10000,
+  "DJI_0933.JPG": 10000,
+  "DJI_0927.JPG": 9957,
+  "DJI_0931.JPG": 10000,
+  "DJI_0925.JPG": 10000,
+  "DJI_0892.JPG": 10000,
+  "DJI_0845.JPG": 10000,
+  "DJI_0878.JPG": 10000,
+  "DJI_0893.JPG": 10000,
+  "DJI_0883.JPG": 10000,
+  "DJI_0101.JPG": 10000,
+  "DJI_0869.JPG": 10000,
+  "DJI_0841.JPG": 10000,
+  "DJI_0882.JPG": 10000,
+  "DJI_0909.JPG": 10000,
+  "DJI_0921.JPG": 10000,
+  "DJI_0074.JPG": 10000,
+  "DJI_0076.JPG": 10000,
+  "DJI_0894.JPG": 10000,
+  "DJI_0880.JPG": 10000,
+  "DJI_0843.JPG": 10000,
+  "DJI_0842.JPG": 10000,
+  "DJI_0881.JPG": 10000,
+  "DJI_0936.JPG": 10000
+ },
+ "features_kept_per_image": {
+  "DJI_0001.JPG": 5775,
+  "DJI_0002.JPG": 5457,
+  "DJI_0003.JPG": 4739,
+  "DJI_0006.JPG": 3588,
+  "DJI_0022.JPG": 7453,
+  "DJI_0074.JPG": 4960,
+  "DJI_0076.JPG": 5057,
+  "DJI_0101.JPG": 6601,
+  "DJI_0799.JPG": 4772,
+  "DJI_0806.JPG": 6927,
+  "DJI_0807.JPG": 6794,
+  "DJI_0809.JPG": 5512,
+  "DJI_0810.JPG": 4202,
+  "DJI_0812.JPG": 4055,
+  "DJI_0813.JPG": 4316,
+  "DJI_0814.JPG": 4661,
+  "DJI_0815.JPG": 4470,
+  "DJI_0816.JPG": 4413,
+  "DJI_0822.JPG": 4418,
+  "DJI_0823.JPG": 3664,
+  "DJI_0831.JPG": 3955,
+  "DJI_0833.JPG": 5776,
+  "DJI_0834.JPG": 5805,
+  "DJI_0835.JPG": 4774,
+  "DJI_0836.JPG": 3110,
+  "DJI_0837.JPG": 1814,
+  "DJI_0838.JPG": 2136,
+  "DJI_0839.JPG": 2229,
+  "DJI_0841.JPG": 1713,
+  "DJI_0842.JPG": 1801,
+  "DJI_0843.JPG": 1490,
+  "DJI_0845.JPG": 1321,
+  "DJI_0847.JPG": 1864,
+  "DJI_0848.JPG": 2534,
+  "DJI_0849.JPG": 2545,
+  "DJI_0852.JPG": 1967,
+  "DJI_0859.JPG": 2078,
+  "DJI_0860.JPG": 2103,
+  "DJI_0862.JPG": 2315,
+  "DJI_0863.JPG": 2962,
+  "DJI_0864.JPG": 3765,
+  "DJI_0865.JPG": 5435,
+  "DJI_0867.JPG": 6325,
+  "DJI_0869.JPG": 6240,
+  "DJI_0872.JPG": 6030,
+  "DJI_0878.JPG": 6156,
+  "DJI_0880.JPG": 6103,
+  "DJI_0881.JPG": 6130,
+  "DJI_0882.JPG": 5509,
+  "DJI_0883.JPG": 5212,
+  "DJI_0892.JPG": 5897,
+  "DJI_0893.JPG": 6811,
+  "DJI_0894.JPG": 7298,
+  "DJI_0898.JPG": 7530,
+  "DJI_0901.JPG": 7084,
+  "DJI_0902.JPG": 7085,
+  "DJI_0903.JPG": 7147,
+  "DJI_0904.JPG": 7082,
+  "DJI_0905.JPG": 6355,
+  "DJI_0906.JPG": 5457,
+  "DJI_0907.JPG": 4532,
+  "DJI_0909.JPG": 3573,
+  "DJI_0921.JPG": 3161,
+  "DJI_0925.JPG": 3774,
+  "DJI_0927.JPG": 3835,
+  "DJI_0929.JPG": 4316,
+  "DJI_0931.JPG": 5707,
+  "DJI_0933.JPG": 6193,
+  "DJI_0936.JPG": 6136,
+  "DJI_0941.JPG": 6505,
+  "DJI_0942.JPG": 6837,
+  "DJI_0946.JPG": 6560,
+  "DJI_0947.JPG": 5591,
+  "DJI_0957.JPG": 5649,
+  "DJI_0958.JPG": 5500,
+  "DJI_0960.JPG": 4955,
+  "DJI_0961.JPG": 4731,
+  "DJI_0962.JPG": 4370,
+  "DJI_0963.JPG": 3790,
+  "DJI_0964.JPG": 2722,
+  "DJI_0965.JPG": 2208,
+  "DJI_0966.JPG": 2304,
+  "DJI_0967.JPG": 1961,
+  "DJI_0968.JPG": 856,
+  "DJI_0997.JPG": 6965
+ },
+ "features_wall_time_s": 45.086362104,
+ "matching": {
+  "wall_time": 26.101681428000006,
+  "num_pairs": 762,
+  "num_pairs_distance": 0,
+  "num_pairs_graph": 762,
+  "num_pairs_time": 0,
+  "num_pairs_order": 0,
+  "num_pairs_bow": 0,
+  "num_pairs_vlad": 0
+ },
+ "tracks": {
+  "wall_time": 5.153006376999997,
+  "num_images": 85,
+  "num_tracks": 81028
+ },
+ "benchmark_s": {
+  "dataset": 0.004807,
+  "split": 8.7e-05,
+  "merge": 1.4e-05,
+  "opensfm": 422.9747841358185,
+  "openmvs": 539.2840015888214,
+  "odm_filterpoints": 12.255753517150879,
+  "odm_meshing": 121.05625009536743,
+  "mvs_texturing": 80.302902,
+  "odm_georeferencing": 47.041313,
+  "odm_dem": 34.659398,
+  "odm_orthophoto": 22.892702,
+  "odm_report": 13.368507,
+  "odm_postprocess": 2.2e-05
+ },
+ "options": "{\"3d_tiles\": false, \"align\": null, \"auto_boundary\": true, \"auto_boundary_distance\": 0, \"bg_removal\": false, \"boundary\": {}, \"build_overviews\": false, \"camera_lens\": \"auto\", \"cameras\": {}, \"cog\": true, \"copy_to\": null, \"crop\": 3, \"dem_decimation\": 1, \"dem_euclidean_map\": false, \"dem_gapfill_steps\": 3, \"dem_resolution\": 5.0, \"dsm\": true, \"dtm\": true, \"end_with\": \"odm_postprocess\", \"fast_orthophoto\": false, \"feature_quality\": \"high\", \"feature_type\": \"dspsift\", \"force_gps\": false, \"gcp\": null, \"geo\": null, \"gltf\": false, \"gps_accuracy\": 3, \"gps_z_offset\": 0, \"ignore_gsd\": false, \"matcher_neighbors\": 0, \"matcher_order\": 0, \"matcher_type\": \"flann\", \"max_concurrency\": 4, \"merge\": \"all\", \"merge_skip_blending\": false, \"mesh_octree_depth\": 11, \"mesh_size\": 200000, \"min_num_features\": 10000, \"name\": \"odm_80m\", \"no_gpu\": false, \"optimize_disk_space\": false, \"orthophoto_compression\": \"DEFLATE\", \"orthophoto_cutline\": false, \"orthophoto_kmz\": false, \"orthophoto_no_tiled\": false, \"orthophoto_png\": false, \"orthophoto_resolution\": 3.0, \"pc_classify\": true, \"pc_copc\": false, \"pc_csv\": false, \"pc_ept\": false, \"pc_filter\": 5, \"pc_las\": true, \"pc_quality\": \"medium\", \"pc_rectify\": false, \"pc_sample\": 0, \"pc_skip_geometric\": false, \"primary_band\": \"auto\", \"project_path\": \"/datasets/odm_80m\", \"radiometric_calibration\": \"none\", \"rerun\": null, \"rerun_all\": false, \"rerun_from\": [\"mvs_texturing\", \"odm_georeferencing\", \"odm_dem\", \"odm_orthophoto\", \"odm_report\", \"odm_postprocess\"], \"rolling_shutter\": true, \"rolling_shutter_readout\": 0, \"sfm_algorithm\": \"incremental\", \"sfm_no_partial\": false, \"skip_3dmodel\": true, \"skip_band_alignment\": false, \"skip_orthophoto\": false, \"skip_report\": false, \"sky_removal\": false, \"sm_cluster\": null, \"sm_no_align\": false, \"smrf_scalar\": 1.25, \"smrf_slope\": 0.15, \"smrf_threshold\": 0.5, \"smrf_window\": 18.0, \"split\": 999999, \"split_image_groups\": null, \"split_overlap\": 150, \"texturing_keep_unseen_faces\": false, \"texturing_single_material\": false, \"texturing_skip_global_seam_leveling\": false, \"tiles\": false, \"use_3dmesh\": false, \"use_exif\": false, \"use_fixed_camera_params\": false, \"use_hybrid_bundle_adjustment\": false, \"video_limit\": 500, \"video_resolution\": 4000}",
+ "config": "align_method: auto\nalign_orientation_prior: vertical\nbundle_outlier_filtering_type: AUTO\nfeature_min_frames: 10000\nfeature_process_size: 2000\nfeature_type: DSPSIFT\nflann_algorithm: KDTREE\nlocal_bundle_radius: 0\nmatcher_type: FLANN\nmatching_gps_distance: 0\nmatching_gps_neighbors: 0\nmatching_graph_rounds: 50\noptimize_camera_parameters: true\nprocesses: 10\nreconstruction_algorithm: incremental\nretriangulation_ratio: 2\nsift_peak_threshold: 0.066\ntriangulation_type: ROBUST\nundistorted_image_format: tif\nundistorted_image_max_size: 4000\nuse_altitude_tag: true\nuse_exif_size: false\n",
+ "cameras": {
+  "dji fc3682 4000 3000 brown 0.6666": {
+   "projection_type": "brown",
+   "width": 4000,
+   "height": 3000,
+   "focal_x": 0.6371850905616633,
+   "focal_y": 0.6371850905616633,
+   "c_x": 0.002005805079763596,
+   "c_y": -0.0009467593432239146,
+   "k1": 0.06730542968795533,
+   "k2": -0.09611786156311738,
+   "p1": -0.00012590815734918944,
+   "p2": -0.00020223741019940864,
+   "k3": 0.0521112600616334
+  }
+ },
+ "choices": {
+  "window": {
+   "centre": [
+    529475.2,
+    4465930.7
+   ],
+   "half_m": [
+    25.0,
+    17.5
+   ],
+   "bounds": [
+    529450.2,
+    4465913.2,
+    529500.2,
+    4465948.2
+   ],
+   "centre_local": [
+    139.2,
+    1.7
+   ],
+   "surface_median_m": -82.65,
+   "crs": "EPSG:32618",
+   "note": "the pinned 50 by 35 m window of P03, a footpath junction, tree crowns and the corner of a flat roof"
+  },
+  "offset": [
+   529336.0,
+   4465929.0
+  ],
+  "crs": "EPSG:32618",
+  "photos": {
+   "a": {
+    "name": "DJI_0823.JPG",
+    "kit_file": "photo_a.jpg",
+    "coverage": 1.0,
+    "principal_ray_distance_m": 25.84,
+    "tilt_deg": 1.23,
+    "shot_index": 11
+   },
+   "b": {
+    "name": "DJI_0822.JPG",
+    "kit_file": "photo_b.jpg",
+    "coverage": 0.9017,
+    "principal_ray_distance_m": 29.87,
+    "tilt_deg": 1.19,
+    "shot_index": 10
+   },
+   "c": {
+    "name": "DJI_0892.JPG",
+    "kit_file": "photo_c.jpg",
+    "coverage": 0.8726,
+    "principal_ray_distance_m": 35.04,
+    "tilt_deg": 1.4,
+    "shot_index": 42
+   }
+  },
+  "pair": {
+   "a": "DJI_0823.JPG",
+   "b": "DJI_0822.JPG",
+   "baseline_m": 11.16,
+   "matches": 2584,
+   "rule": "photo_a and its strongest match partner at a baseline of at least 8.0 m"
+  },
+  "group": [
+   "DJI_0814.JPG",
+   "DJI_0815.JPG",
+   "DJI_0816.JPG",
+   "DJI_0822.JPG",
+   "DJI_0823.JPG",
+   "DJI_0882.JPG",
+   "DJI_0883.JPG",
+   "DJI_0892.JPG"
+  ],
+  "group_size": 8,
+  "group_pairs": {
+   "DJI_0814.JPG__DJI_0815.JPG": 2291,
+   "DJI_0814.JPG__DJI_0816.JPG": 1171,
+   "DJI_0814.JPG__DJI_0822.JPG": 857,
+   "DJI_0814.JPG__DJI_0823.JPG": 451,
+   "DJI_0814.JPG__DJI_0882.JPG": 961,
+   "DJI_0814.JPG__DJI_0883.JPG": 694,
+   "DJI_0815.JPG__DJI_0816.JPG": 2458,
+   "DJI_0815.JPG__DJI_0822.JPG": 1287,
+   "DJI_0815.JPG__DJI_0823.JPG": 897,
+   "DJI_0815.JPG__DJI_0882.JPG": 660,
+   "DJI_0815.JPG__DJI_0883.JPG": 750,
+   "DJI_0815.JPG__DJI_0892.JPG": 396,
+   "DJI_0816.JPG__DJI_0822.JPG": 1863,
+   "DJI_0816.JPG__DJI_0823.JPG": 1348,
+   "DJI_0816.JPG__DJI_0882.JPG": 414,
+   "DJI_0816.JPG__DJI_0883.JPG": 918,
+   "DJI_0816.JPG__DJI_0892.JPG": 485,
+   "DJI_0822.JPG__DJI_0823.JPG": 2584,
+   "DJI_0822.JPG__DJI_0882.JPG": 461,
+   "DJI_0822.JPG__DJI_0883.JPG": 800,
+   "DJI_0822.JPG__DJI_0892.JPG": 573,
+   "DJI_0823.JPG__DJI_0882.JPG": 247,
+   "DJI_0823.JPG__DJI_0883.JPG": 595,
+   "DJI_0823.JPG__DJI_0892.JPG": 507,
+   "DJI_0882.JPG__DJI_0883.JPG": 2411,
+   "DJI_0882.JPG__DJI_0892.JPG": 1692,
+   "DJI_0883.JPG__DJI_0892.JPG": 2286
+  },
+  "readout_ms": 23.0,
+  "feature_process_size": 2000,
+  "sample_px": 2000,
+  "to_map": {
+   "scale": 0.999611,
+   "angle_deg": 0.2236,
+   "note": "the affine that turns the adjustment's own frame onto the map frame, fitted on the points"
+  },
+  "reference_lla": {
+   "latitude": 40.3433942485788,
+   "longitude": -74.65458881993368,
+   "altitude": 0.0
+  },
+  "dem_res_m": 0.05000000000000288,
+  "depth_step_m": 0.25,
+  "roof": {
+   "polygon": [
+    [
+     529548.21,
+     4465924.58
+    ],
+    [
+     529545.58,
+     4465922.11
+    ],
+    [
+     529542.87,
+     4465919.57
+    ],
+    [
+     529550.44,
+     4465906.76
+    ],
+    [
+     529543.91,
+     4465902.36
+    ],
+    [
+     529539.09,
+     4465899.39
+    ],
+    [
+     529546.82,
+     4465885.9
+    ],
+    [
+     529554.1,
+     4465871.96
+    ],
+    [
+     529550.42,
+     4465869.95
+    ],
+    [
+     529520.06,
+     4465853.05
+    ],
+    [
+     529505.71,
+     4465877.64
+    ],
+    [
+     529504.16,
+     4465876.86
+    ],
+    [
+     529504.57,
+     4465876.02
+    ],
+    [
+     529499.49,
+     4465873.03
+    ],
+    [
+     529487.7,
+     4465892.85
+    ],
+    [
+     529476.31,
+     4465911.97
+    ],
+    [
+     529478.22,
+     4465912.96
+    ],
+    [
+     529471.33,
+     4465924.12
+    ],
+    [
+     529500.77,
+     4465945.75
+    ],
+    [
+     529501.81,
+     4465944.15
+    ],
+    [
+     529504.3,
+     4465945.7
+    ],
+    [
+     529510.61,
+     4465938.45
+    ],
+    [
+     529513.45,
+     4465940.2
+    ],
+    [
+     529516.02,
+     4465941.79
+    ],
+    [
+     529511.7,
+     4465950.75
+    ],
+    [
+     529507.96,
+     4465960.46
+    ],
+    [
+     529523.2,
+     4465966.22
+    ],
+    [
+     529548.21,
+     4465924.58
+    ]
+   ],
+   "area_m2": 5097.9,
+   "centre": [
+    529516.39,
+    4465908.34
+   ],
+   "corner": [
+    529471.33,
+    4465924.12
+   ],
+   "window_overlap_m2": 584.6,
+   "building": "university",
+   "rule": "the OpenStreetMap building of site.gpkg (layer buildings_site) with the largest overlap with the window, in the products' system; the corner is the footprint vertex inside the window nearest the window's centre"
+  }
+ }
+}

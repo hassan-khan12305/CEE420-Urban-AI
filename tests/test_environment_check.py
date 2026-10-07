@@ -19,7 +19,7 @@ CHECK = REPO / "P01" / "01_01_environment_check.ipynb"
 STDLIB = {
     "json", "pathlib", "sys", "platform", "re", "math", "os", "textwrap",
     "itertools", "random", "warnings", "time", "datetime", "collections",
-    "subprocess", "importlib", "shutil",
+    "subprocess", "importlib", "shutil", "inspect",
 }
 
 
@@ -32,7 +32,15 @@ def top_level_imports(notebook: Path) -> set[str]:
             match = re.match(r"\s*(?:import|from)\s+([A-Za-z_]\w*)", line)
             if match:
                 found.add(match.group(1))
-    return found - STDLIB
+    # A module shipped beside the notebook (P03b's sfm_tools.py) is not a dependency of the
+    # environment, but whatever it imports is, so its own imports are demanded in its place.
+    local = {path.stem for path in notebook.parent.glob("*.py")}
+    for name in found & local:
+        for line in (notebook.parent / f"{name}.py").read_text().splitlines():
+            match = re.match(r"\s*(?:import|from)\s+([A-Za-z_]\w*)", line)
+            if match:
+                found.add(match.group(1))
+    return found - STDLIB - local
 
 
 def test_the_check_imports_everything_the_notebooks_import():

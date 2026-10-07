@@ -1,0 +1,29 @@
+# =============================================================================
+# File      : README.org -- Precept 03b
+# Author    : Jürgen Hackl <hackl@princeton.edu>
+# Copyright (c) 2026 Jürgen Hackl <hackl@princeton.edu>
+# =============================================================================
+#+OPTIONS: toc:nil num:nil tags:nil
+#+TITLE: Precept 03b Kit, Structure from Motion
+#+SUBTITLE: CEE420 Urban AI
+#+AUTHOR: Jürgen Hackl
+
+On the field day your photographs went into the software and came out as an orthomosaic, a surface model and a point cloud. These seven notebooks open the machine between the two. They follow the seven steps of the lecture's pipeline, photographs, tie points, sparse cloud, dense cloud, mesh, surface model, orthomosaic. Each one starts with the whole flight's product of its step, then zooms into one window of the field, a footpath junction and the corner of a flat roof, and does the step's central computation on your own photographs beside the software's result. You run and read. You do not write code. None of it is assessed.
+
+Start with =03b_01=. Its first cell prints which flight the folder holds, and if that works your environment is ready for the rest. Then read in order. Every number a notebook computes is printed beside the number the course pipeline computed from the same files, which travel in =data/ground_truth.json=, so you can see at once whether your run agrees.
+
+| Notebook | What it shows |
+|----------+---------------|
+| =03b_01_photographs_and_metadata= | What the software knew before it looked at a pixel: the camera, where each photograph was taken, which photographs overlap, and which pairs it matched |
+| =03b_02_feature_detection= | What a feature is: a corner found by hand, its size and direction, and the software's features of the same photograph with the 128 numbers that describe each |
+| =03b_03_feature_matching= | How the same spot is found in two photographs, how wrong matches are thrown out, and how matches become tracks |
+| =03b_04_bundle_adjustment= | How every camera and every tie point were placed at once, the camera the flight calibrated, and a small adjustment of eight photographs you run yourself |
+| =03b_05_dense_matching= | How a height is found for nearly every pixel, where that fails, and the cloud of twelve million points it gives |
+| =03b_06_mesh_and_elevation_models= | How points become a mesh, a surface model and a terrain model, and what each one hides |
+| =03b_07_orthomosaic= | How one photograph and the surface model become a map, and why roofs lean when the terrain model is used instead |
+
+Every computation is one call into =sfm_tools.py=, the kit's toolbox. It holds the geometry of the camera and every algorithm the notebooks use, written in plain numpy and scipy with a sentence of explanation on each, and you can open it and read how any step works. The course pipeline that computes the reference numbers imports the same file, so the notebooks and the references cannot disagree.
+
+Each notebook ends with "Your turn": a cell that runs as it is, with one marked value to change. Change it, run again, and answer one question in words. The answers come in the Friday post, not in the kit. "Check your understanding" asks four questions you can answer from what the notebook showed.
+
+The data in =data/= is what the software left behind on this flight. The whole flight: the orthomosaic at 10 cm, the surface model at 25 cm, the terrain model at 50 cm, a sample of 100,000 points of the dense cloud with their classes, the software's mesh thinned to a quarter of its vertices, all 85 camera positions with the 80,679 points of the sparse cloud, every matched pair, the count of photographs per ground cell, the software's report and its reading of the files. The window: three photographs and two undistorted copies at 2000 pixels, the features and descriptors of one pair, the matches within a neighbourhood of eight photographs, every observation of every reconstructed point, one depth map, the dense cloud, the mesh, the surface and terrain models and the mosaic cut to the window. =data/flight.json= names the flight and records the choices the pipeline made, the window, the photographs, the pair, the neighbourhood and the roof, and =data/site.gpkg= carries the outline of the field and the buildings around it from OpenStreetMap. Everything is the course's own work under CC BY 4.0, except the outline and the buildings, which are ODbL 1.0, copyright OpenStreetMap contributors. Every raster carries its source, its licence and its retrieval date in its tags, every array file the same in its own arrays, and the sources are listed in =data/README.org=. Nothing that identifies a person is in any file.
